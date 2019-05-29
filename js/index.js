@@ -6,7 +6,7 @@ function calculateTip() {
 
   //validate input
   if (billAmt === "" || tipAmount == 0) {
-    alert("Please make sure ALL vaues are entered");
+    alert("Please make sure ALL values are entered");
     return;
   }
   //Check to see if this input is empty or less than or equal to 1
