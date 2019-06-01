@@ -5,25 +5,44 @@
   <meta charset="UTF-8">
   <title>Tip Calculator</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/tip.png" type="image/x-icon"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
   <div id="main">
-    <h1>My Projects</h1>
-    <div id="buttons">
-      <a href='https://tips.seyonrajagopal.me/'>Tip Calculator</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 2</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 3</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 4</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 5</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 6</a>
-      <a href='https://projects.seyonrajagopal.me/'>Project 7</a>      
+    <h1>Tip Calculator</h1>
+    <div id="calulator">
+      <form id="form">
+        <p>Total Bill:
+          <p>$ <input id="billTotal" type="text" placeholder="Bill Amount">
+            <p>Tip Percentage:
+              <select id="tipPercentage" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+                <option disabled selected value="0">-- Choose an Option --</option>
+                <option value="0.3">30&#37; </option>
+                <option value="0.2">20&#37; </option>
+                <option value="0.15">15&#37; </option>
+                <option value="0.1">10&#37; </option>
+                <option value="0.05">5&#37; </option>
+                <option value="other">Other </option>
+              </select>
+              <input id="tipNum" type="text" placeholder="Tip Value (%)"><span id="percentage">&#37;</span>
+      </form>
+      <p># of people:</p>
+      <input id="numPeople" type="text" placeholder="# of People"> people
+      <button type="button" id="calculate">Calculate!</button>
+      <button type="button" id="clear">Clear</button>
+      
+
+    </div>
+    <div id="totalTip">
+      $<span id="tip">0.00</span>
+      <small id="each">each</small>
     </div>
   </div>
+  <script type="text/javascript" src="tipcalculator.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 <footer>
