@@ -3,9 +3,9 @@ body {
     text-align: center;
     background: rgb(31, 76, 201);
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, rgb(113, 119, 148), rgb(31, 76, 201));
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, rgb(113, 119, 148), rgb(31, 76, 201));
+    background: linear-gradient(to left, #0083B0, #00B4DB);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
