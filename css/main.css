@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(to left, rgb(156, 3, 3), rgb(0, 0, 0));
+    font-size: 20px; 
+}
+.hide {
+    display: none;
+}
+
+
+.container {
+    margin:100px auto;
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    text-align: center;
+    border-radius: 20px;
+   
+}
+.darkHead {
+    background-color: rgb(14, 0, 0);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -1em;
+    padding: 1em;
+    font-size: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+form{
+    text-align: left;
+    padding: 1em;
+}
+form input[type="text"], select {
+    padding: 1em;
+    width: 19em;
+    color: red;
+    font-weight: bold;
+    font-size: 70%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.1em;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+select {
+    color: black !important;
+    width: 17em;
+    font-weight: normal;
+    font-size: 90%;
+}
+.calBtn,.initBtn {
+    margin-left: 8em;
+    color: white;
+    background-color: rgb(156, 3, 3);
+    font-size: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 10em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.calEnd {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.calEnd h3 {
+    text-align: left;
+}
+.calEnd .tipDivPara {
+    margin-top: -2.4em;
+    margin-left: 8em;
+    text-transform: capitalize;
+}
+.newAmtPara {
+    margin-top: -2.4em;
+    margin-left: 8em;
+}
+
+.complete-border-radius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.initBtn {
+    margin-left: 0em;
+    margin-bottom: 1.5em;
+}
+.calEnd .tipDivPara2 {
+    margin-top: -2.2em;
+    margin-left: 15em;
+    text-transform: capitalize; 
+}
+ /* Responsiveness @ max-width 600px */
+ @media(max-width: 600px) {
+     .container {
+        width: 350px;
+     }
+     form input[type="text"], select {
+        padding: 0.5em;
+        width: 15em;
+        margin-left: 0.1em;
+     }
+     select {
+        width: 13em;
+     }
+     .calBtn,.initBtn {
+        margin-left: 2.5em;
+     }
+     .initBtn {
+        margin-left: -1em;
+     }
+     .calEnd {
+         font-size: 70%;
+     }
+     .newAmtPara {
+        margin-left: 15em;
+    }
+ } 
+
+ /* Responsiveness @ max-width 400px */
+ @media(max-width: 400px) {
+    .container {
+        width: 300px;
+    }
+    form input[type="text"] {
+        padding: 0.5em;
+        width: 15em;
+    }
+    select {
+        width: 13em;
+        padding: 0.5em;
+    }
+    .calEnd h3 {
+        text-align: center;
+    }
+    .calEnd .tipDivPara {
+        margin-top: 1.4em;
+        margin-left: -1.5em;
+    }
+    .calEnd .tipDivPara2 {
+        margin-top: -2.2em;
+        margin-left: 4.5em;
+    }
+    .newAmtPara {
+        margin-top: 1em;
+        margin-left: 0.5em;
+    }
+    .calBtn {
+        margin-left: 1.5em;
+     }
+   
+ }

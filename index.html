@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Tip Calculator</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/tip.png" type="image/x-icon"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    
 </head>
-
 <body>
-  <div id="main">
-    <h1>Tip Calculator</h1>
-    <div id="calulator">
-      <form id="form">
-        <p>Total Bill:
-          <p>$ <input id="billTotal" type="text" placeholder="Bill Amount">
-            <p>Tip Percentage:
-              <select id="tipPercentage" onchange="java_script_:show(this.options[this.selectedIndex].value)">
-                <option disabled selected value="0">-- Choose an Option --</option>
-                <option value="0.3">30&#37; </option>
-                <option value="0.2">20&#37; </option>
-                <option value="0.15">15&#37; </option>
-                <option value="0.1">10&#37; </option>
-                <option value="0.05">5&#37; </option>
-                <option value="other">Other </option>
-              </select>
-              <input id="tipNum" type="text" placeholder="Tip Value (%)"><span id="percentage">&#37;</span>
-      </form>
-      <p># of people:</p>
-      <input id="numPeople" type="text" placeholder="# of People"> people
-      <button type="button" id="calculate">Calculate!</button>
-      <button type="button" id="clear">Clear</button>
-      
+    <div class="rounded container">
+        <div class="c">
+            <h2 id="tipHead" class="darkHead  ">tip Calculator</h2>
+        </div>
+        <div id="calBody" class="calBody">
+            <form action="#">
+                <input type="text" placeholder="How much is their bill &#36; ?" name="" id="billAmt">
+                <div>
+                    <label for="">How was their service ?</label>
+                    <div>
+                    <select name="" id="qlyServ">
+                        <option disabled selected value="">&#45;&#45;Choose an Option&#45;&#45;</option>
+                        <option value="0.3">30&#37; &#45; Excellent</option>
+                        <option value="0.2">20&#37; &#45; Good</option>
+                        <option value="0.15">15&#37; &#45; not Bad</option>
+                        <option value="0.1">10&#37; &#45; Bad</option>
+                        <option value="0.05">5&#37; &#45; Terible</option>
+                    </select>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="How many people are sharing the bill ?" name="" id="numPple">
+                    </div>
+                    <div>
+                        <button id="calBill" class="calBtn">Calculate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div id="tipCalEnd" class="hide calEnd complete-border-radius darkHead ">
+            <div class="tipDiv">
+                <h2>tip Calculator </h>
+                <h3>tip amount  : </h3>
+                <p id="nTip" class="tipDivPara">&#36; 5</p> 
+                <p id="tipEach" class="tipDivPara2">each</p> 
+            </div>
+            <div class="newAmt">
+                <h3>total amount (new bill) : </h3>
+                <p id="nBill" class="newAmtPara">&#36; 200</p>
+            </div>
+            <button id="initBtn" class="initBtn">Get Started Again</button>
+        </div>
 
     </div>
-    <div id="totalTip">
-      $<span id="tip">0.00</span>
-      <small id="each">each</small>
-    </div>
-  </div>
-  <script type="text/javascript" src="tipcalculator.js"></script>
-  <script src="js/index.js"></script>
+    
+ 
+<script src="calc.js"></script>
 </body>
-
-<footer>
-Copyright &copy; 2019 - <script>document.write(new Date().getFullYear())</script> Seyon Rajagopal. All rights reserved.</h4>
-    </br>
-    <a href="https://github.com/seyon123" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/seyon-rajagopal/" target="_blank">LinkedIn</a> | <a href="https://www.seyonrajagopal.ca" target="_blank">Website</a> 
-</footer>
-
 </html>
